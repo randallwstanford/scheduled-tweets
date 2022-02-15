@@ -1,0 +1,23 @@
+{
+  "name": "scheduled-tweets",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randallwstanford/scheduled-tweets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/randallwstanford/scheduled-tweets/issues"
+  },
+  "homepage": "https://github.com/randallwstanford/scheduled-tweets#readme"
+}
