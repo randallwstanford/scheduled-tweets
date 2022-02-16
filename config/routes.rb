@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   # GET /about
   get "about", to: "about#index"
 
-  # get "/", to: "main#index" OR
+  get "sign_up", to: "registrations#new"
+  post "sign_up", to: "registrations#create"
+
   root to: "main#index"
 end
