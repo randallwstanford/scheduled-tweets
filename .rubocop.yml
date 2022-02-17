@@ -2,7 +2,10 @@ Style/Encoding:
   Enabled: false
 
 Layout/LineLength:
-  Max: 99
+  Max: 150
 
 Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
   Enabled: false
