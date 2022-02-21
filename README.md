@@ -18,6 +18,7 @@
   - Creating and using Controllers to redirect user and query the database.
   - Creating and migrating database Models 
   - Rails is so nice. 🚂
+- See it deployed here: https://my-tweet-scheduler.herokuapp.com/ 
 
 ## Technologies
 - Ruby on Rails - version 7.0.2.2
