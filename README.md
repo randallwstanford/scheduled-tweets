@@ -1,24 +1,69 @@
-# README
+# Tweet-Scheduler 🐤
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of Contents
+* [About](#about)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Launch](#launch)
+* [Screenshots](#screenshots)
 
-Things you may want to cover:
+## About
+- -*In Progress*- 
+- Tweet-Scheduler is an app that lets you schedule when you want your tweets to be posted.
+- I created Tweet-Scheduler because I wanted to learn the developer workflow of using Ruby on Rails. 
+- In this project I learned: 
+  - Industry standard use of Ruby on Rails with Bootstrap
+  - Routing, re-routing, and CRUD operation with recources
+  - Creating dynamic views with html.erb, i.g, for-loops, link_to/button_to tags, before_actions
+  - Creating and using Controllers to redirect user and query the database.
+  - Creating and migrating database Models 
+  - Rails is so nice. 🚂
 
-* Ruby version
+## Technologies
+- Ruby on Rails - version 7.0.2.2
+- Omniauth - version 2.0
+- Twitter API - version 2.0
 
-* System dependencies
+## Setup
+- Clone/fork this repository.
+- Make sure you have Rails 7.0.2.2 installed.
+- Create Twitter Developer account, create a project, acquire API-key and API-secret.
+- Add API-key and API-secret: 
+  - For VSCode run: `EDITOR="code --wait" rails credentials:edit --environment=development`
+  - For Sublime run: `EDITOR="subl --wait" bin/rails credentials:edit  --environment=development`
+  - For Vim run: `EDITOR=vim rails credentials:edit` 
 
-* Configuration
+*NOTE: This creates a development yaml file in your var directory to add your API-key and API-secret.*
 
-* Database creation
+Add the following code with your API-key and API-secret. 
 
-* Database initialization
+```
+twitter: 
+  api_key: xxxxxxxxxxxxxxxxxx
+  api_secret: xxxxxxxxxxxxxxxxxx
+```
 
-* How to run the test suite
+Install project depenencies: 
+```
+bundle install
+```
+Create database and schema:
+```
+rails db:create
+rails db:migrate
+```
+In the Twitter Developer portal, add the following URLS to your project.
+- `localhost:3000/auth/twitter/callback`
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Launch
+- Once cloned, open up your terminal.
+- Go to the scheduled-tweets directory and run the server.
+```
+$ cd ./scheduled-tweets
+$ rails server 
+```
+- Head to `localhost:3000` 🚀🚀🚀🚀🚀🚀
 
-* ...
+## Screenshots
+![doge](https://i.imgur.com/lNCurPJ.gif)
