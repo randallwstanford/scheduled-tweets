@@ -17,6 +17,7 @@
   - Creating dynamic views with html.erb, i.g, for-loops, link_to/button_to tags, before_actions
   - Creating and using Controllers to redirect user and query the database.
   - Creating and migrating database Models 
+  - How to enable and configure the [Rubocop](https://github.com/rubocop/rubocop) Ruby linter.
   - Rails is so nice. 🚂
 - See it deployed here: https://my-tweet-scheduler.herokuapp.com/ 
 
