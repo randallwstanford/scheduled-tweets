@@ -1,5 +1,6 @@
 class TweetsController < ApplicationController
   before_action :require_user_logged_in!
+  skip_before_action :verify_authenticity_token
 
   def index
     @tweets = Current.user.tweets
@@ -7,5 +8,20 @@ class TweetsController < ApplicationController
 
   def new
     @tweet = Tweet.new
+  end
+
+  def create
+    @tweet = Current.user.tweets.create(tweet_params)
+    if @tweet.save
+      redirect_to tweets_path, notice: 'Tweet was scheduled successfully'
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def tweet_params
+    params.require(:tweet).permit(:twitter_account_id, :body, :publish_at)
   end
 end
