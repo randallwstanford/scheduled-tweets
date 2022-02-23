@@ -8,4 +8,9 @@ class Tweet < ApplicationRecord
   after_initialize do
     self.publish_at ||= 24.hour.from_now
   end
+
+  def published?
+    # Return boolean value
+    tweet_id?
+  end
 end
