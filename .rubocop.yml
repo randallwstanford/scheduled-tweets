@@ -15,3 +15,6 @@ Metrics/AbcSize:
 
 Metrics/BlockLength:
   Max: 35
+
+Style/SymbolArray:
+  Enabled: false
