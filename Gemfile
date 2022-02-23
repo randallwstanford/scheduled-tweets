@@ -14,7 +14,7 @@ gem 'sqlite3', '~> 1.4'
 
 # gem 'pg'
 
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', require: 'rack/cors'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
@@ -77,5 +77,5 @@ group :test do
   gem 'webdrivers'
 end
 
-gem "omniauth-twitter", "~> 1.4"
-gem "omniauth-rails_csrf_protection", "~> 1.0"
+gem 'omniauth-rails_csrf_protection', '~> 1.0'
+gem 'omniauth-twitter', '~> 1.4'
