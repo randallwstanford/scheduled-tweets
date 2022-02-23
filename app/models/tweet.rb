@@ -9,8 +9,16 @@ class Tweet < ApplicationRecord
     self.publish_at ||= 24.hour.from_now
   end
 
+  after_save_commit do
+    TweetJob.set(wait_until: @tweet.publish_at).preform_later(self) if publish_at_previously_changed?
+  end
+
   def published?
-    # Return boolean value
     tweet_id?
+  end
+
+  def publish_to_twitter!
+    tweet = twitter_account.client.update(body)
+    update(tweet_id: tweet.id)
   end
 end
