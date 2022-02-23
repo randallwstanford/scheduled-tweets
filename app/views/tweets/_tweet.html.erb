@@ -1,18 +1,20 @@
 <div class="mb-3 card card-body">
 
-  <%= tweet.body %>
-
-  <div class="me-4">
-    <%= image_tag tweet.twitter_account.image, class: "rounded-circle" %>
-    <% puts tweet.twitter_account %>
-    <% puts tweet.twitter_account %>
-    <%= link_to tweet.twitter_account.name, "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank, class: "btn btn-outline-primary ms-3" %>
+  <div class="card card-body mb-2">
+    <%= tweet.body%>
   </div>
 
-  <% if tweet.published? %>
-    <%= link_to "View Tweet", "https://twitter.com/#{tweet.twitter_account.username}/status#{tweet.tweet_id}", target: :_blank %>
-  <% else %>
-    Scheduled for <%= l tweet.publish_at, format: :short %>
-    <%= link_to "Edit Tweet", edit_tweet_path(tweet) %>
-  <% end %>
+  <div>
+    <%= image_tag tweet.twitter_account.image, class: "rounded-circle" %>
+    <%= link_to tweet.twitter_account.name, "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank, class: "btn btn-outline-primary ms-3" %>
+
+    <% if tweet.published? %>
+      <%= link_to "View Tweet", "https://twitter.com/#{tweet.twitter_account.username}/status/#{tweet.tweet_id}", target: :_blank, class: "btn btn-secondary ms-2" %>
+    <% else %>
+      <%= link_to "Edit Tweet", edit_tweet_path(tweet), class: "btn btn-secondary ms-2 me-2" %>
+      <div class="rounded bg-dark text-dark bg-opacity-25 p-2 mt-1">
+        Scheduled for <%= l tweet.publish_at, format: :short %>
+      </div>
+    <% end %>
+  </div>
 </div>
