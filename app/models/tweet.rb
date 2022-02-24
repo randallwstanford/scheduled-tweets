@@ -10,7 +10,7 @@ class Tweet < ApplicationRecord
   end
 
   after_save_commit do
-    TweetJob.set(wait_until: @tweet.publish_at).preform_later(self) if publish_at_previously_changed?
+    TweetJob.set(wait_until: publish_at).perform_later(self) if publish_at_previously_changed?
   end
 
   def published?
