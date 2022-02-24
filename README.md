@@ -8,7 +8,7 @@
 * [Screenshots](#screenshots)
 
 ## About
-- Tweet-Scheduler is an Gem that lets you schedule when you want your tweets to be posted, i.e., a Buffer clone.
+- Tweet-Scheduler is an Gem that lets you schedule when you want your tweets to be posted, i.e. a Buffer clone.
 - I created Tweet-Scheduler because I wanted to learn the developer workflow of using Ruby on Rails. 
 - In this project I learned: 
   - Industry standard use of Ruby on Rails with Bootstrap
