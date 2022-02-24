@@ -74,4 +74,4 @@ $ rails server
 - Head to `localhost:3000` 🚀🚀🚀🚀🚀🚀
 
 ## Screenshots
-![Scheduled Tweets](https://user-images.githubusercontent.com/83252804/155583136-42539f79-a354-4ee7-bb8a-68343deb0aad.png)
+![Scheduled Tweets](https://user-images.githubusercontent.com/83252804/155583358-45f946ca-4fb0-4145-956a-18df178f78e8.png)
