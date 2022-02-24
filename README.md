@@ -8,8 +8,7 @@
 * [Screenshots](#screenshots)
 
 ## About
-- -*In Progress*- 
-- Tweet-Scheduler is an app that lets you schedule when you want your tweets to be posted.
+- Tweet-Scheduler is an Gem that lets you schedule when you want your tweets to be posted, i.e., a Buffer clone.
 - I created Tweet-Scheduler because I wanted to learn the developer workflow of using Ruby on Rails. 
 - In this project I learned: 
   - Industry standard use of Ruby on Rails with Bootstrap
@@ -18,13 +17,20 @@
   - Creating and using Controllers to redirect user and query the database.
   - Creating and migrating database Models 
   - How to enable and configure the [Rubocop](https://github.com/rubocop/rubocop) Ruby linter.
+  - Creating and setting up credentials for a Gem
+  - Deploying a Gem. 
+  - Debugging with binding.irb.
   - Rails is so nice. 🚂
 - See it deployed here: https://my-tweet-scheduler.herokuapp.com/ 
 
 ## Technologies
 - Ruby on Rails - version 7.0.2.2
+- Rails - version 3.0.3
 - Omniauth - version 2.0
 - Twitter API - version 2.0
+- Sidekiq - version 6.4
+- Bootstrap - version 5.1.3
+- Rubocop - version 0.8.6
 
 ## Setup
 - Clone/fork this repository.
